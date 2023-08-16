@@ -1,5 +1,5 @@
 import BodyComponent from "./components/bodyComponent";
- import Home from "./pages/home";
+import Home from "./pages/home";
  
 function App() {
   return (

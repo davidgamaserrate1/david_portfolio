@@ -1,17 +1,11 @@
-.information{
+.information{    
     background-color: #000;
     width: 80%;
-    height: 32px;    
-    margin: 32px 16px;
+    height: 32px;         
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 8px auto;
+     
     color: #fff;
-    border-radius: 50px;
-}
-
-.information_item{
-margin: auto auto;
-color: #fff;
+    border-radius: 50px;    
 }

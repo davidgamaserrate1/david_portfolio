@@ -6,4 +6,6 @@
     border-top-right-radius: 50px;
     padding-top: 35px;
     background-color: #fff;    
+    position: fixed;
+     
 }

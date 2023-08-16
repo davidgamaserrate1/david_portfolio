@@ -1,0 +1,17 @@
+h3{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-weight: bold;
+    font-size: 26px;         
+    margin: 32px 0;
+ 
+} 
+   
+
+.skills_container{
+    padding: 16px;
+    border: 1px solid #f0f0f0; 
+     
+     
+}

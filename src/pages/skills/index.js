@@ -3,7 +3,7 @@ import BodyComponent from "../../components/bodyComponent";
 import ChangePage from "../../components/changePage";
 import './skills-styles.css'
 import Skill from "../../components/Skill";
-import { Button, calc } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 
 import cvPdf from '../../assets/CV David Serrate.pdf'
 
@@ -43,7 +43,8 @@ const Skills = ()=>{
     return(
         <BodyComponent>
             <ChangePage next={false} link="/about"/>           
-            <h3>SKILLS</h3>             
+            <h3>SKILLS</h3>   
+                     
             <div className="skills_container">             
                 {mySkills.map((item, index)=>(                
                     <Skill key={index} src={item.src} name={item.name} value={item.value} />                 

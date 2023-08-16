@@ -1,0 +1,36 @@
+.experience_item{
+    border: 1px solid #f0f0f0;     background-color: #f5f5f5;    
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;  
+    margin: 0 16px;
+    width: 100%;
+    height: 100%;     
+    margin-bottom: 16px;
+}
+
+.experience_item__tittle{
+    background-color: #fff; 
+     margin: 4px 0;     
+    height: 35px;
+    width: 100%;     
+    font-weight: bold;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+      
+}
+
+
+.experience_item__description{ 
+    width: 100%;
+    height: 100%;     
+    display: flex;    
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience_item__period{
+    margin: 8px auto;
+}

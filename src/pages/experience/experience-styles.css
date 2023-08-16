@@ -1,0 +1,29 @@
+h4{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-weight: bold;
+    font-size: 26px;         
+    margin: 32px 0;
+ 
+} 
+
+.experience_container{
+    display: flex;
+    justify-content: center;
+  
+  
+    
+}
+
+.experiences{
+    
+
+}
+
+.experience_description{  
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+}

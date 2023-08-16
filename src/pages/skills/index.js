@@ -3,6 +3,39 @@ import BodyComponent from "../../components/bodyComponent";
 import ChangePage from "../../components/changePage";
 import './skills-styles.css'
 import Skill from "../../components/Skill";
+
+const mySkills =[
+    {
+        src:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" , 
+        name:"HTML" ,
+        value:80
+    },
+    {
+        src:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" , 
+        name:"CSS" ,
+        value:75
+    },
+    {
+        src:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" , 
+        name:"JavaScript" ,
+        value:70
+    },
+    {
+        src:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" , 
+        name:"ReactJS" ,
+        value:85
+    },
+    {
+        src:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" , 
+        name:"NodeJS" ,
+        value:65
+    },
+    {
+        src:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" , 
+        name:"SQL" ,
+        value:90
+    },
+]
 const Skills = ()=>{
     return(
         <BodyComponent>
@@ -10,9 +43,14 @@ const Skills = ()=>{
             <h3>Skills</h3>             
             <div className="skills_container">
              
-             <Skill/>
-             <Skill/>
-             <Skill/>
+             {mySkills.map((item, index)=>(
+             
+             <div key={index}>
+                <Skill src={item.src} name={item.name} value={item.value} />
+             </div>
+             ))}
+           
+             
 
             </div>
 

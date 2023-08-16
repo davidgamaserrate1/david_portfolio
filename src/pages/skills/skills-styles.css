@@ -12,6 +12,7 @@ h3{
 .skills_container{
     padding: 16px;
     border: 1px solid #f0f0f0; 
-     
+    max-height: 550px; 
+    overflow-y: scroll;
      
 }

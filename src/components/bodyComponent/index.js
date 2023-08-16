@@ -19,16 +19,16 @@ const BodyComponent = (props)=> {
                 <BreadcrumbItem>
                     <BreadcrumbLink href='/about'>Sobre Mim</BreadcrumbLink>
                 </BreadcrumbItem>
-                <BreadcrumbItem isCurrentPage>
+                <BreadcrumbItem >
                     <BreadcrumbLink href='/skills'>Skills</BreadcrumbLink>
                 </BreadcrumbItem>
-                <BreadcrumbItem isCurrentPage>
+                <BreadcrumbItem >
                     <BreadcrumbLink href='/experience'>Experiências</BreadcrumbLink>
                 </BreadcrumbItem>
-                <BreadcrumbItem isCurrentPage>
+                <BreadcrumbItem >
                     <BreadcrumbLink href='/projetcts'>Projetos</BreadcrumbLink>
                 </BreadcrumbItem>
-                <BreadcrumbItem isCurrentPage>
+                <BreadcrumbItem >
                     <BreadcrumbLink href='/contact'>Contato</BreadcrumbLink>
                 </BreadcrumbItem>
             </Breadcrumb>

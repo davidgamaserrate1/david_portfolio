@@ -12,14 +12,27 @@ h3{
 .skills_container{
     padding: 16px;
     border: 1px solid #f0f0f0; 
-    max-height: 550px; 
+    max-height: 400px; 
     overflow-y: scroll;
-     
+
+}
+.skills_container::-webkit-scrollbar {
+    width: 18px;  
+}
+
+.skills_container::-webkit-scrollbar-thumb {
+    background-color: #ccc; 
+    border-radius: 14px;  
+}
+
+.skills_container::-webkit-scrollbar-track {
+    background-color: #fff; 
 }
 
 .download_button{
- position: relative;
- z-index: 9999;
  display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 16px auto;
  
 }

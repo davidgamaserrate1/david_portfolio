@@ -52,7 +52,7 @@ const Skills = ()=>{
             <div className="download_button">
                 <a href={cvPdf} download >
                     <Button style={{
-                        zIndex:'999', background :'#425AAF',color:'#fff',   right: '15px',  position:'fixed'}}>
+                        zIndex:'999', background :'#425AAF',color:'#fff',  }}>
                         Download CV <span class="material-symbols-outlined">download</span> 
                     </Button>
                 </a>

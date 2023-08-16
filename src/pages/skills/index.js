@@ -3,7 +3,7 @@ import BodyComponent from "../../components/bodyComponent";
 import ChangePage from "../../components/changePage";
 import './skills-styles.css'
 import Skill from "../../components/Skill";
-import { Button } from "@chakra-ui/react";
+import { Button, calc } from "@chakra-ui/react";
 
 import cvPdf from '../../assets/CV David Serrate.pdf'
 
@@ -42,19 +42,23 @@ const mySkills =[
 const Skills = ()=>{
     return(
         <BodyComponent>
-            <ChangePage next={false} link="/about"/>
+            <ChangePage next={false} link="/about"/>           
             <h3>SKILLS</h3>             
             <div className="skills_container">             
                 {mySkills.map((item, index)=>(                
                     <Skill key={index} src={item.src} name={item.name} value={item.value} />                 
                 ))}
             </div>
+            <div className="download_button">
+                <a href={cvPdf} download >
+                    <Button style={{
+                        zIndex:'999', background :'#425AAF',color:'#fff',   right: '15px',  position:'fixed'}}>
+                        Download CV <span class="material-symbols-outlined">download</span> 
+                    </Button>
+                </a>
+            </div>
             
-            <a href={cvPdf} download>
-                <Button style={{background :'#425AAF',color:'#fff', display:'flex', justifyContent:'center', alignItems:'center', margin:'16px auto'}}>
-                    Download CV <span class="material-symbols-outlined">download</span> 
-                </Button>
-            </a>
+            
             
             <ChangePage next={true} link="/experience"/>
 

@@ -1,3 +1,8 @@
+.transition-element {
+    transition: background-color 0.5s ease, color 0.5s ease;
+    
+  }
+
 h4{
     display: flex;
     justify-content: center; 
@@ -11,15 +16,9 @@ h4{
 .experience_container{
     display: flex;
     justify-content: center;
-  
-  
     
 }
-
-.experiences{
-    
-
-}
+ 
 
 .experience_description{  
     display: flex;
@@ -27,3 +26,36 @@ h4{
     flex-wrap: wrap;
   
 }
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in-element {
+    animation: fade-in 0.5s ease;
+  }
+  
+  .fade-out-element {
+    animation: fade-out 0.5s ease;
+    opacity: 0;
+  }
+  
+  .fade-in-page {
+    animation: fade-in 0.5s ease;
+    opacity: 1;
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  

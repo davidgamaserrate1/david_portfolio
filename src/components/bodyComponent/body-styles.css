@@ -1,3 +1,13 @@
+.header_redirects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+}
+
+.transition-element {
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
 .body{
     margin-top: 80px;    
     width: 100%;
@@ -11,3 +21,36 @@
     z-index: 999;
      
 }
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in-element {
+    animation: fade-in 0.5s ease;
+  }
+  
+  .fade-out-element {
+    animation: fade-out 0.5s ease;
+    opacity: 0;
+  }
+  
+  .fade-in-page {
+    animation: fade-in 0.5s ease;
+    opacity: 1;
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  

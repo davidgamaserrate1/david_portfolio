@@ -3,13 +3,15 @@ import BodyComponent from "../../components/bodyComponent";
 import ChangePage from "../../components/changePage";
 import './aboutMe-styles.css'
 
-const AboutMe = ()=>{
-    return(
-        <BodyComponent>
-            <ChangePage link="/" next={false}/>
+const AboutMe = () => {
+    return (
+        <div className="fade-in-element">
+
+        <BodyComponent > {/* Adicionando classe de animação */}
+            <ChangePage link="/" next={false} />
             <h2>Sobre mim</h2>
 
-            <p className="aboutMe_text">
+            <p className="aboutMe_text"  >
                 Sou um desenvolvedor full stack, formado em engenharia de software pela universidade 
                 Federal de Mato Grosso do Sul, com vasta experiência na criação e desenvolvimento de 
                 sistemas web. Possuo conhecimento sólido em tecnologias como React, Node.js e SQL Oracle. 
@@ -19,10 +21,12 @@ const AboutMe = ()=>{
                 em projetos que impulsionem o crescimento e a eficiência das soluções web.
             </p>
 
-            <ChangePage link="/skills" next={true}/>                
+            <ChangePage link="/skills" next={true} />
         </BodyComponent>
-         
+        </div>
     )
 }
 
 export default AboutMe
+
+            

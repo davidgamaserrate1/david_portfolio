@@ -7,15 +7,17 @@ import './home-styles.css'
 
 const Home = ()=>{
     return(
-    <BodyComponent>
-        <PictureModule/>        
-        <div className="informations">
-            <Information  information="David Serrate"/>
-            <Information  information="Full stack developer"/>
-            <Information  information="Campo grande, MS"/>
-        </div>
-        <ChangePage link="about" next={true} />
-    </BodyComponent>
+    <div className="fade-in-element">     
+        <BodyComponent>
+            <PictureModule/>        
+            <div className="informations">
+                <Information  information="David Serrate"/>
+                <Information  information="Full stack developer"/>
+                <Information  information="Campo grande, MS"/>
+            </div>
+            <ChangePage link="about" next={true} />
+        </BodyComponent>
+    </div>
     )
     
 }

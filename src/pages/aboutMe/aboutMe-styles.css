@@ -1,3 +1,6 @@
+.transition-element {
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
 h2{
    display: flex;
    justify-content: center; 
@@ -11,3 +14,36 @@ h2{
     padding: 16px;
     text-align: center;
 }
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in-element {
+    animation: fade-in 1s ease;
+  }
+  
+  .fade-out-element {
+    animation: fade-out 0.5s ease;
+    opacity: 0;
+  }
+  
+  .fade-in-page {
+    animation: fade-in 0.5s ease;
+    opacity: 1;
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  

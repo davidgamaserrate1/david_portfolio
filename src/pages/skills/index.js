@@ -41,29 +41,34 @@ const mySkills =[
 ]
 const Skills = ()=>{
     return(
-        <BodyComponent>
-            <ChangePage next={false} link="/about"/>           
-            <h3>SKILLS</h3>   
-                     
-            <div className="skills_container">             
-                {mySkills.map((item, index)=>(                
-                    <Skill key={index} src={item.src} name={item.name} value={item.value} />                 
-                ))}
-            </div>
-            <div className="download_button">
-                <a href={cvPdf} download >
-                    <Button style={{
-                        zIndex:'999', background :'#425AAF',color:'#fff',  }}>
-                        Download CV <span class="material-symbols-outlined">download</span> 
-                    </Button>
-                </a>
-            </div>
-            
-            
-            
-            <ChangePage next={true} link="/experience"/>
+        <div className="fade-in-element">
+          
 
-        </BodyComponent>
+            <BodyComponent>
+                <ChangePage next={false} link="/about"/>           
+                <h3>SKILLS</h3>   
+                        
+                <div className="skills_container">             
+                    {mySkills.map((item, index)=>(                
+                        <Skill key={index} src={item.src} name={item.name} value={item.value} />                 
+                    ))}
+                </div>
+                <div className="download_button">
+                    <a href={cvPdf} download >
+                        <Button style={{
+                            zIndex:'999', background :'#425AAF',color:'#fff',  }}>
+                            Download CV <span class="material-symbols-outlined">download</span> 
+                        </Button>
+                    </a>
+                </div>
+                
+                
+                
+                <ChangePage next={true} link="/experience"/>
+
+            </BodyComponent>
+        </div>
+
     )
 }
 

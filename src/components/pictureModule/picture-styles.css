@@ -1,0 +1,13 @@
+.picture_module{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.picuter_module__picture{
+    width: 137px;
+    height: 137px;
+    border-radius: 50%;
+    padding: 4px;
+    border: 1px solid #f5f5f5;
+}

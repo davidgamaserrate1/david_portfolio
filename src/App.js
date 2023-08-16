@@ -1,14 +1,10 @@
 import BodyComponent from "./components/bodyComponent";
- 
+ import Home from "./pages/home";
  
 function App() {
   return (
       <div className="app">
-        <BodyComponent>
-          <div>
-          testeaaaaa
-          </div>
-        </BodyComponent>
+        <Home/>
       </div>
     
      

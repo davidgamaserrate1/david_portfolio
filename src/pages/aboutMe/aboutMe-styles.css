@@ -1,0 +1,13 @@
+h2{
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+   font-weight: bold;
+   font-size: 26px;         
+   margin: 32px 0;
+}
+
+.aboutMe_text{
+    padding: 16px;
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+.nextPage{
+    display: flex;
+    width: 100%;     
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 16px;
+}
+.nextPage:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.icon{
+    font-size: 35px;
+}
+
+.prevPage{
+    display: flex;
+    width: 100%;     
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -50px;
+}
+.prevPage:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.icon{
+    font-size: 35px;
+}
